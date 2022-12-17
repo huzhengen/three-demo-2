@@ -20,7 +20,6 @@ let donuts: Group
 new GLTFLoader().load('../resources/models/donuts.glb', (gltf) => {
   scene.add(gltf.scene);
   donuts = gltf.scene;
-
   mixer = new THREE.AnimationMixer(gltf.scene); // 动画混合器
   const clips = gltf.animations; // 播放所有动画
   clips.forEach(function (clip) {
