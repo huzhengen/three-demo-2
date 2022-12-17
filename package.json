@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
+    "buildToGitHub": "tsc && vite build --base=/three-demo-2/dist/",
     "preview": "vite preview"
   },
   "devDependencies": {
